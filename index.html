@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>simple website</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Karla:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <nav class="nav-bar">
+            <div class="logo">
+                <button><img src="images/logo.svg"></button>
+            </div>
+
+
+            <div class="mobile-nav-button">
+                <button onclick="mobileNav()"><img src="images/icon-menu.svg"/></button>
+            </div>
+            <div id="mobile-nav" hidden>
+                <div class="mobile-nav-bar" >
+                    <button onclick="closeButton()" id="close-button"><img src="images/icon-close-menu.svg" /></button>
+                    <div class="dropdown">
+                        <button onclick="featuresDropdown()" class="dropbtn" id="featuresDrop"> Features <img id="dropArrow" src="images/icon-arrow-down.svg" /> </button>
+                    </div>
+    
+                    <div class="dropdown">
+                        <button onclick="companyDropdown()" class="dropbtn" id="companyDrop">Company <img id="dropArrow" src="images/icon-arrow-down.svg"></button>
+          
+                    </div>
+                
+                    <button>Careers</button>
+    
+                    <button>About</button>
+
+                    <button id="login-button">Login</button>
+                    <button id="register-button">Register</button>
+    
+                </div>
+
+
+
+            </div>
+
+
+
+            <div class="left-nav">
+
+                <div class="dropdown">
+                    <button onclick="featuresDropdown()" class="dropbtn" id="featuresDrop"> Features <img src="images/icon-arrow-down.svg" /> </button>
+                    <div id="featuresList" class="dropdown-content">
+                        <li><img src="images/icon-todo.svg"> Todo List</li>
+                        <li><img src="images/icon-calendar.svg"> Calendar</li>
+                        <li><img src="images/icon-reminders.svg"> Reminders</li>
+                        <li><img src="images/icon-planning.svg"> Planning</li>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button onclick="companyDropdown()" class="dropbtn" id="companyDrop">Company <img src="images/icon-arrow-down.svg"></button>
+                    <div id="companyList" class="dropdown-content">
+                        <li>History</li>
+                        <li>Our Team</li>
+                        <li>Blog</li>
+                    </div>
+                </div>
+            
+                <button>Careers</button>
+
+                <button>About</button>
+            </div>
+
+            <div class="right-nav">
+                <button id="login-button">Login</button>
+                <button id="register-button">Register</button>
+            </div>
+            
+        </nav>
+
+        <div class="container">
+
+            <div class="left-container">
+
+                <h1 id="title">Make remote work</h1>
+
+                <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+
+                <button> Learn more</button>
+
+                <div class="image-logos">
+
+                    <img src="images/client-databiz.svg">
+
+                    <img src="images/client-audiophile.svg">
+
+                    <img src="images/client-meet.svg">
+
+                    <img src="images/client-maker.svg">
+                </div>
+
+            </div>
+
+            <div class="right-container">
+
+                    <img class="large-right-image"  src="images/image-hero-desktop.png" >
+                    <img class="mobile-large-image" src="images/image-hero-mobile.png">
+
+            </div>
+
+        </div>
+        
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
